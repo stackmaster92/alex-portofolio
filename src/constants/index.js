@@ -3,7 +3,7 @@ export const HERO_CONTENT =
 `;
 
 export const ABOUT_TEXT =
-  `Hi, I'm Alex Guerrero and I'm a Senior Software Developer from Romania with over 6 years of experience building scalable and reliable web and mobile applications. My expertise spans both front-end and back-end technologies, including React, Next.js, Node.js, Kotlin, PostgreSQL, MySQL, and MongoDB.
+  `Hi, I'm Alex Guerrero and I'm a Senior Software Developer from United States with over 6 years of experience building scalable and reliable web and mobile applications. My expertise spans both front-end and back-end technologies, including React, Next.js, Node.js, Kotlin, PostgreSQL, MySQL, and MongoDB.
 
 As a full-stack developer, I specialize in crafting responsive user interfaces, designing efficient APIs (REST & GraphQL), and managing robust databases. I'm committed to writing clean, maintainable code and delivering high-performance solutions that prioritize user experience.
 

@@ -51,7 +51,7 @@ const About = () => {
         >
           <div className='space-y-4'>
             <p className='text-sm leading-relaxed sm:text-base lg:text-lg text-neutral-300'>
-              Hi, I'm Alex Guerrero and I'm a Senior Software Developer from Romania with over 6 years of experience building scalable and reliable web and mobile applications. My expertise spans both front-end and back-end technologies, including React, Next.js, Node.js, Kotlin, PostgreSQL, MySQL, and MongoDB.
+              Hi, I'm Alex Guerrero and I'm a Senior Software Developer from United States with over 6 years of experience building scalable and reliable web and mobile applications. My expertise spans both front-end and back-end technologies, including React, Next.js, Node.js, Kotlin, PostgreSQL, MySQL, and MongoDB.
             </p>
             
             <p className='text-sm leading-relaxed sm:text-base lg:text-lg text-neutral-300'>
