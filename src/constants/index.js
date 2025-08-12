@@ -70,6 +70,6 @@ export const EXPERIENCES = [
 
 export const CONTACT = {
   address: "Riverview, Florida, United States",
-  phoneNo: "+1 ",
+  phoneNo: "+1 (208) 994-1004",
   email: "alex.the.dev77@gmail.com",
 };
