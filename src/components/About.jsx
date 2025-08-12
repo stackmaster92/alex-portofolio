@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
 import Slideshow from './Slideshow'; // Import Slideshow component
 import { ABOUT_TEXT } from '../constants';
 
 const About = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  
+  // Truncate text to show only first 200 characters initially
+  const truncatedText = ABOUT_TEXT.slice(0, 900) + '...';
+  const displayText = isExpanded ? ABOUT_TEXT : truncatedText;
+
   return (
     <div className='pb-8'>
       <motion.h1
@@ -50,17 +56,47 @@ const About = () => {
           className='w-full lg:w-1/2'
         >
           <div className='space-y-4'>
-            <p className='text-sm leading-relaxed sm:text-base lg:text-lg text-neutral-300'>
-              Hi, I'm Alex Guerrero and I'm a Senior Software Developer from United States with over 6 years of experience building scalable and reliable web and mobile applications. My expertise spans both front-end and back-end technologies, including React, Next.js, Node.js, Kotlin, PostgreSQL, MySQL, and MongoDB.
-            </p>
+            <div className='text-sm leading-relaxed sm:text-base lg:text-lg text-neutral-300 space-y-2'>
+              {isExpanded 
+                ? (
+                  <>
+                    {ABOUT_TEXT.split('. ').slice(0, -1).map((sentence, index) => (
+                      <p key={index} className='mb-2'>
+                        {sentence.trim()}{sentence.trim().endsWith('.') ? '' : '.'}
+                      </p>
+                    ))}
+                    <p className='mb-2 inline'>
+                      {ABOUT_TEXT.split('. ').slice(-1)[0].trim()}{ABOUT_TEXT.split('. ').slice(-1)[0].trim().endsWith('.') ? '' : '.'}
+                      <button
+                        onClick={() => setIsExpanded(false)}
+                        className='text-blue-400 hover:text-blue-300 text-base font-medium transition-colors duration-200 underline ml-2'
+                      >
+                        Less
+                      </button>
+                    </p>
+                  </>
+                )
+                : (
+                  <>
+                    {truncatedText.split('. ').slice(0, -1).map((sentence, index) => (
+                      <p key={index} className='mb-2'>
+                        {sentence.trim()}{sentence.trim().endsWith('.') ? '' : '.'}
+                      </p>
+                    ))}
+                    <p className='mb-2 inline'>
+                      {truncatedText.split('. ').slice(-1)[0].trim()}{truncatedText.split('. ').slice(-1)[0].trim().endsWith('.') ? '' : '.'}...
+                      <button
+                        onClick={() => setIsExpanded(true)}
+                        className='text-blue-400 hover:text-blue-300 text-base font-medium transition-colors duration-200 underline ml-2'
+                      >
+                        More
+                      </button>
+                    </p>
+                  </>
+                )
+              }
+            </div>
             
-            <p className='text-sm leading-relaxed sm:text-base lg:text-lg text-neutral-300'>
-              As a full-stack developer, I specialize in crafting responsive user interfaces, designing efficient APIs (REST & GraphQL), and managing robust databases. I'm committed to writing clean, maintainable code and delivering high-performance solutions that prioritize user experience.
-            </p>
-            
-            <p className='text-sm leading-relaxed sm:text-base lg:text-lg text-neutral-300'>
-              While others may balance coding with dance or music, I channel my passion entirely into engineering smart, scalable systems that solve real-world problems.
-            </p>
           </div>
         </motion.div>
       </div>

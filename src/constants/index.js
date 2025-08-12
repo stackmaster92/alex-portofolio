@@ -3,68 +3,137 @@ export const HERO_CONTENT =
 `;
 
 export const ABOUT_TEXT =
-  `Hi, I'm Alex Guerrero and I'm a Senior Software Developer from United States with over 6 years of experience building scalable and reliable web and mobile applications. My expertise spans both front-end and back-end technologies, including React, Next.js, Node.js, Kotlin, PostgreSQL, MySQL, and MongoDB.
+  `Hi there! I'm Alex Guerrero, a passionate Senior Software Developer with over 6 years of experience crafting innovative digital solutions. Based in the United States, I love turning complex problems into elegant, scalable applications that make a real impact.
 
-As a full-stack developer, I specialize in crafting responsive user interfaces, designing efficient APIs (REST & GraphQL), and managing robust databases. I'm committed to writing clean, maintainable code and delivering high-performance solutions that prioritize user experience.
+  My journey in software development has led me to specialize in building robust backend systems using Python (Django, FastAPI) and Node.js, while also enjoying the creative side of frontend development with React and Next.js. I'm particularly excited about creating scalable APIs (REST & GraphQL) and working with modern databases like PostgreSQL, MySQL, and MongoDB.
 
-While others may balance coding with dance or music, I channel my passion entirely into engineering smart, scalable systems that solve real-world problems.`;
+  What drives me is the challenge of architecting solutions that not only work flawlessly but also scale beautifully. I believe in writing code that's clean, maintainable, and a joy for other developers to work with. Whether it's integrating AI/ML capabilities, optimizing database performance, or ensuring top-notch security, I'm always looking for ways to push the boundaries of what's possible.
+
+  When I'm not coding, you'll find me exploring the latest in cloud technologies and AI advancements. I'm passionate about staying at the forefront of technology because that's where the most exciting challenges and opportunities lie. Let's build something amazing together!`;
 
 export const EXPERIENCES = [
   {
-    year: "Apr 2023 - Sep 2024",
-    role: "Full-stack Developer",
-    company: "Meal Hippo",
+    year: "Jan 2024 - May 2025",
+    role: "Senior Backend Developer",
+    company: "Omada Health",
     description:
-      `Built web application prototype using Django with Stripe payments integration and Bootstrap CSS. Implemented Celery for asynchronous email tasks with Postman integration. Managed business development activities including vendor and customer recruitment. Iterated platform following Lean Startup practices.`,
-    technologies: ["Django", "Python", "Stripe", "Bootstrap", "Celery", "Postman"],
+      `Architected and developed a secure, scalable document translation platform backend using Python (Django, FastAPI) with advanced NLP models (NLTK) and AI integration. Implemented real-time collaboration features with WebSocket and supported React/Tailwind frontend for seamless UX.`,
+    technologies: [
+      "Python",
+      "Django",
+      "FastAPI",
+      "NLTK",
+      "AI/NLP",
+      "WebSocket",
+      "React.js",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "AWS",
+      "Docker",
+    ],
   },
   {
-    year: "Apr 2023 - Sep 2024",
-    role: "Full-stack Developer",
-    company: "Meal Hippo",
+    year: "Sep 2022 - Dec 2023",
+    role: "Senior Backend Engineer",
+    company: "Etched",
     description:
-      `Built web application prototype using Django with Stripe payments integration and Bootstrap CSS. Implemented Celery for asynchronous email tasks with Postman integration. Managed business development activities including vendor and customer recruitment. Iterated platform following Lean Startup practices.`,
-    technologies: ["Django", "Python", "Stripe", "Bootstrap", "Celery", "Postman"],
+      `Led backend development of a smart licensing automation system using Laravel and Node.js. Integrated Python ML models for anomaly detection and license misuse. Deployed scalable infrastructure on AWS Amplify, supporting VueJS frontend.`,
+    technologies: [
+      "Laravel",
+      "Node.js",
+      "Python",
+      "TensorFlow",
+      "AWS Amplify",
+      "Docker",
+      "VueJS",
+      "RESTful APIs",
+      "MySQL",
+    ],
   },
   {
-    year: "Apr 2023 - Sep 2024",
-    role: "Full-stack Developer",
-    company: "Meal Hippo",
+    year: "Mar 2021 - Aug 2022",
+    role: "Backend Engineer & AI Developer",
+    company: "Codametrix",
     description:
-      `Built web application prototype using Django with Stripe payments integration and Bootstrap CSS. Implemented Celery for asynchronous email tasks with Postman integration. Managed business development activities including vendor and customer recruitment. Iterated platform following Lean Startup practices.`,
-    technologies: ["Django", "Python", "Stripe", "Bootstrap", "Celery", "Postman"],
+      `Developed scalable backend services and ML dashboards with Django and GraphQL. Created REST and GraphQL APIs consumed by React/Next.js frontend. Implemented CI/CD pipelines with GitHub Actions and containerized deployments using Docker and Kubernetes.`,
+    technologies: [
+      "Python",
+      "Django",
+      "GraphQL",
+      "React.js",
+      "Next.js",
+      "Docker",
+      "Kubernetes",
+      "GitHub Actions",
+      "PostgreSQL",
+    ],
   },
   {
-    year: "Apr 2023 - Sep 2024",
-    role: "Full-stack Developer",
-    company: "Meal Hippo",
+    year: "Jul 2020 - Feb 2021",
+    role: "Senior Backend Developer",
+    company: "Rulai",
     description:
-      `Built web application prototype using Django with Stripe payments integration and Bootstrap CSS. Implemented Celery for asynchronous email tasks with Postman integration. Managed business development activities including vendor and customer recruitment. Iterated platform following Lean Startup practices.`,
-    technologies: ["Django", "Python", "Stripe", "Bootstrap", "Celery", "Postman"],
+      `Built backend AI services with FastAPI supporting NLP chatbots using TensorFlow and OpenAI APIs. Developed RESTful and WebSocket APIs integrated with React frontend. Managed cloud infrastructure on AWS.`,
+    technologies: [
+      "Python",
+      "FastAPI",
+      "TensorFlow",
+      "OpenAI",
+      "WebSocket",
+      "React.js",
+      "Node.js",
+      "AWS",
+    ],
   },
   {
-    year: "Apr 2023 - Sep 2024",
-    role: "Full-stack Developer",
-    company: "Meal Hippo",
+    year: "Jan 2019 - Jun 2020",
+    role: "Backend Developer",
+    company: "HSBC",
     description:
-      `Built web application prototype using Django with Stripe payments integration and Bootstrap CSS. Implemented Celery for asynchronous email tasks with Postman integration. Managed business development activities including vendor and customer recruitment. Iterated platform following Lean Startup practices.`,
-    technologies: ["Django", "Python", "Stripe", "Bootstrap", "Celery", "Postman"],
+      `Developed backend microservices with Flask and Laravel, integrating Python ML fraud detection models. Enabled real-time communication with WebSocket and supported React Native frontend enhancements.`,
+    technologies: [
+      "Laravel",
+      "Python",
+      "Flask",
+      "Machine Learning",
+      "WebSocket",
+      "React Native",
+      "Zustand",
+      "PostgreSQL",
+      "AWS",
+    ],
   },
   {
-    year: "Apr 2023 - Sep 2024",
-    role: "Full-stack Developer",
-    company: "Meal Hippo",
+    year: "Mar 2019 - Dec 2019",
+    role: "Backend Engineer",
+    company: "Firstrade",
     description:
-      `Built web application prototype using Django with Stripe payments integration and Bootstrap CSS. Implemented Celery for asynchronous email tasks with Postman integration. Managed business development activities including vendor and customer recruitment. Iterated platform following Lean Startup practices.`,
-    technologies: ["Django", "Python", "Stripe", "Bootstrap", "Celery", "Postman"],
+      `Implemented backend systems for AI-driven real-time trading dashboards using TensorFlow. Built WebSocket streaming services and integrated Firebase authentication. Supported Node.js microservices and PostgreSQL databases.`,
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "WebSocket",
+      "Firebase",
+      "Node.js",
+      "PostgreSQL",
+    ],
   },
   {
-    year: "Apr 2023 - Sep 2024",
+    year: "Jan 2019 - Mar 2019",
     role: "Full-stack Developer",
-    company: "Meal Hippo",
+    company: "Matsuyama",
     description:
-      `Built web application prototype using Django with Stripe payments integration and Bootstrap CSS. Implemented Celery for asynchronous email tasks with Postman integration. Managed business development activities including vendor and customer recruitment. Iterated platform following Lean Startup practices.`,
-    technologies: ["Django", "Python", "Stripe", "Bootstrap", "Celery", "Postman"],
+      `Developed responsive marketing websites with React.js and Next.js. Built backend APIs with PHP and Laravel. Automated deployments with GitHub Actions and Docker.`,
+    technologies: [
+      "PHP",
+      "Laravel",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Docker",
+      "CI/CD",
+      "GitHub Actions",
+    ],
   },
 ];
 
